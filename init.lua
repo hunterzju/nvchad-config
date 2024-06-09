@@ -37,3 +37,6 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- 在NvChad配置中设置DISPLAY环境变量
+-- vim.cmd('let $DISPLAY = "localhost:11.0"')
