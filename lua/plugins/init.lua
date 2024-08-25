@@ -32,6 +32,9 @@ return {
   		ensure_installed = {
   			"vim", "lua", "vimdoc"
   		},
+      context = {
+        enable = true,
+      },
   	},
   },
 }

@@ -17,6 +17,12 @@ local plugins = {
 		  on_attach = nil, -- (fun(buf: integer): boolean) return false to disable attaching
     }
     end
+  },
+  { "rcarriga/nvim-dap-ui", 
+    dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"}  
+  },
+  {
+    "mfussenegger/nvim-dap-python"
   }
 }
 

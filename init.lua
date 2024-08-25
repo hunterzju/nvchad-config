@@ -38,5 +38,18 @@ vim.schedule(function()
   require "mappings"
 end)
 
+-- load custom config
+require('custom.my_custom')
+
+-- -- load workspace config if exists
+vim.o.exrc = true
+-- local workconfig = vim.fn.getcwd() .. '/.workspace.lua';
+-- local workconfig_exists = vim.fn.filewritable(workconfig)
+-- if workconfig_exists == 1 then
+--   package.path = package.path..";"..workconfig
+--   require('.workspace.lua')
+-- end
+
+
 -- 在NvChad配置中设置DISPLAY环境变量
 -- vim.cmd('let $DISPLAY = "localhost:11.0"')
