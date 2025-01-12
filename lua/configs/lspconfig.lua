@@ -23,7 +23,7 @@ lspconfig.pylsp.setup {
     pylsp = {
       plugins = {
         pycodestyle = {
-          ignore = {"E221", "E501", "W504", "E302", "E305", "E402", "W391"},
+          ignore = {"E221", "E301", "E501", "W504", "E302", "E305", "E402", "E251", "W391"},
           maxLineLength = 100
         }
       }
