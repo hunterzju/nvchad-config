@@ -33,7 +33,13 @@ local plugins = {
         -- See Configuration section for options
 		},
     -- See Commands section for default commands if you want to lazy load on them
-  },
+	},
+	{
+	  "GCBallesteros/jupytext.nvim",
+	  config = true,
+	  -- Depending on your nvim distro or config you may need to make the loading not lazy
+	  lazy=false,
+	}
 }
 
 return plugins
