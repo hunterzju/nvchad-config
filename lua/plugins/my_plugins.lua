@@ -39,6 +39,12 @@ local plugins = {
 	  config = true,
 	  -- Depending on your nvim distro or config you may need to make the loading not lazy
 	  lazy=false,
+	},
+	{
+	  "NvChad/nvterm",
+	  config = function ()
+	    require("nvterm").setup()
+	  end,
 	}
 }
 

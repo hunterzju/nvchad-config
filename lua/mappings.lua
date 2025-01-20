@@ -14,3 +14,5 @@ map("n", "gd", "<cmd>Telescope lsp_definitions<CR>", { desc = "telescope lsp_def
 map("n", "gr", "<cmd>Telescope lsp_references<CR>", { desc = "telescope lsp_references" })
 map("n", "gi", "<cmd>Telescope lsp_implementations<CR>", { desc = "telescope lsp_implementations" })
 
+-- nvterm
+map("n", "<leader>tt", "<cmd>lua require('nvterm.terminal').toggle 'float'<CR>", { desc = "nvterm toggle" })
