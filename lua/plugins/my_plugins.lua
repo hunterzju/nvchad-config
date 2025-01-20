@@ -45,6 +45,32 @@ local plugins = {
 	  config = function ()
 	    require("nvterm").setup()
 	  end,
+	},
+	{
+	  "olimorris/codecompanion.nvim", lazy = false,
+	  --config = true,
+	  dependencies = {
+	    "nvim-lua/plenary.nvim",
+	    "nvim-treesitter/nvim-treesitter",
+	  },
+		config = function()
+    	require("codecompanion").setup({
+    	  adapters = {
+    	    deepseek = function()
+    	      return require("codecompanion.adapters").extend("deepseek", {
+    	        env = {
+    	          api_key = "sk-d4cb97a6624d435ca0816c251106772b",
+    	        },
+    	      })
+    	    end,
+    	  },
+    	  strategies = {
+    	    chat = { adapter = "deepseek", },
+    	    inline = { adapter = "deepseek" },
+    	    agent = { adapter = "deepseek" },
+    	  },
+    	})
+  	end
 	}
 }
 
